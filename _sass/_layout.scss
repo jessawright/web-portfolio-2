@@ -1,48 +1,130 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strong, sub, sup, var,
-b, u, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+html {
+    line-height: 1;
+    font-size: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 body {
-	line-height: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
-ol, ul {
-	list-style: none;
+h1 {
+    font-size: 3em;
+    line-height: 1.05;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: bottom;
+}
+h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+h3 {
+    font-size: 1.75em;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+h4 {
+    font-size: 1.125em;
+    line-height: 1.22222222;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+h5, h6, p, blockquote, span, pre, a, abbr, address, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strong, var, b, u, i, dl, dt, dd, ol, ul, li, label, legend, caption, details, figcaption, mark {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-size: 1em;
+}
+div, object, iframe, img, sub, sup, fieldset, form, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+}
+menu, ol, ul {
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+:focus {
+    /* remember to define focus styles! */
+    outline: none;
+    /* this is to help you remember to do that! */
+    background-color: orange;
+}
+a:active, a:hover {
+    outline-width: 0;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+sub {
+    bottom: -0.25em;
+}
+sup {
+    top: -0.5em;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+a img, :link img, :visited img {
+    border: none
+}
+
+.navbar {
+	background-color: #bbbbbb;
+	padding: 1em 0;
+	margin: 2em 0;
+}
+.navbar li {
+	display: inline-block;
+	padding: 0 1em;
+}
+
+footer {
+	background-color: #bbbbbb;
 }
