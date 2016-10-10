@@ -1,0 +1,17 @@
+---
+layout: page
+title: Photos Index
+---
+
+<p>This is a description of this collection.</p>
+
+<p>Now, a list of the pages in this collection:</p>
+
+<ul>
+    {% for page in site.photos %} {% if page.title %} {% unless page.title == "Photos Index" %}
+    
+    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+    
+    {% endunless %} {% endif %} {% endfor %}
+    
+</ul>

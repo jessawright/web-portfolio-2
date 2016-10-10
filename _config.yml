@@ -28,3 +28,6 @@ sass:
 include: ['_pages']
 kramdown:
   markdown: GFM
+collections: 
+  photos:
+    output: true
