@@ -17,7 +17,7 @@ h1 {
     font-size: 3em;
     line-height: 1.05;
     margin: 0;
-    padding: 0;
+    padding: .5em 0;
     border: 0;
     vertical-align: bottom;
 }
@@ -25,7 +25,7 @@ h2 {
     font-size: 2.25em;
     line-height: 1.25;
     margin: 0;
-    padding: 0;
+    padding: .5em 0;
     border: 0;
     vertical-align: baseline;
 }
@@ -45,14 +45,14 @@ h4 {
     border: 0;
     vertical-align: baseline;
 }
-h5, h6, p, blockquote, span, pre, a, abbr, address, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strong, var, b, u, i, dl, dt, dd, ol, ul, li, label, legend, caption, details, figcaption, mark {
+h5, h6, blockquote, span, pre, a, abbr, address, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strong, var, b, u, i, dl, dt, dd, ol, ul, label, legend, caption, details, figcaption, mark {
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
     font-size: 1em;
 }
-div, object, iframe, img, sub, sup, fieldset, form, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, audio, video {
+div, object, iframe, img, sub, sup, fieldset, form, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure, hgroup, menu, nav, output, ruby, section, summary, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -115,10 +115,17 @@ a img, :link img, :visited img {
     border: none
 }
 
+header {
+    background-color: #fde7bf;
+    padding: 2em 0;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline
+}
+
 .navbar {
-	background-color: #bbbbbb;
-	padding: 1em 0;
-	margin: 2em 0;
+    background-color: #fdd181;
+    padding: 1em 0;
 }
 .navbar li {
 	display: inline-block;
@@ -126,5 +133,25 @@ a img, :link img, :visited img {
 }
 
 footer {
-	background-color: #bbbbbb;
+	background-color: #acd0bf;
+	padding: 2em;
+	margin: 0;
+    border: 0;
+    vertical-align: baseline
+}
+
+
+main, p, time {
+    padding: .5em 0;
+	margin: 0;
+    border: 0;
+    vertical-align: baseline
+}
+
+li {
+    padding: .25em 0;
+	margin: 0;
+    border: 0;
+    vertical-align: baseline
+    
 }

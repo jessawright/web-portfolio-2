@@ -1,11 +1,15 @@
 <header>
-	<h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+	<p>All of the yellow is header.</p>
+	<p>(_includes/header.html)</p>
+	<h1>{{ site.title }}</h1>
 	<nav>
 		<ul class="navbar">
+			<li><a href="{{ site.baseurl }}">Home</a></li>
 			{% for page in site.pages %} {% if page.title %}
 			<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 			{% endif %} {% endfor %}
 			<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+			<li><a href="{{ "/sample-collection" | prepend: site.baseurl }}">Sample Collection</a></li>
 		</ul>
 	</nav>
 </header>

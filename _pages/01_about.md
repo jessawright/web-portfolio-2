@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-About content goes here.
+This is information about the page or author or whatever.
 
-* A list item
-* Another list item
+(_pages/01_about.md)
