@@ -1,4 +1,9 @@
-// CSS reset
+$text-color: #000000;
+$focus-highlight: #DDDDDD;
+
+* {
+  box-sizing: border-box;
+}
 
 html {
     line-height: 1;
@@ -91,6 +96,8 @@ a:active, a:hover {
 a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    text-decoration: none;
+    color: $text-color;
 }
 sub, sup {
     font-size: 75%;
@@ -117,22 +124,47 @@ a img, :link img, :visited img {
     border: none
 }
 
-// CSS for clarifying template sections
-header {
-    background-color: #fde7bf;
+/* Nav */
+.nav {
+  display: inline-flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.nav-list, .nav-list__item, .nav-title {
+  display: inline-block;
+}
+
+.nav-list {
+  border: 1px solid black;
+}
+
+.nav-list__item:focus, .nav-list__item:hover, .nav-list__item:active {
+  background-color: $focus-highlight;
+}
+.nav-list__item {
+  padding: .25rem .5rem;
+  font-variant: small-caps;
+  :first-child {
+    padding: .25rem .5rem .25rem 1rem;
+  }
+  :last-child {
+    padding: .25rem 1rem .25rem .5rem;
+  }
 
 }
 
-footer {
-	background-color: #acd0bf;
-}
+.nav-title {
+  border: 1px solid black;
+  margin: 0 0 0 1rem;
+  :focus, :active, :hover {
+    background-color: $focus-highlight;
 
-// CSS for making things more readable
-.navbar {
-    background-color: #fdd181;
-    padding: 1em 0;
+  }
 }
-.navbar li {
-	display: inline-block;
-	padding: 0 1em;
+.nav-title__text {
+  padding: .25rem;
+  font-variant: small-caps;
 }

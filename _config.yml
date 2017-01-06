@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jessa Jekyll Base
-email: main@email.com
+title: Jessa Wright
+email: jessa@jessawright.com
 description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site
-twitter_username: twitterusername
-github_username:  githubusername
+twitter_username: jessaiswright
+github_username:  jessawright
 
 # Build settings
 sass:
@@ -28,6 +28,6 @@ sass:
 include: ['_pages']
 kramdown:
   markdown: GFM
-collections: 
-  sample-collection:
+collections:
+  work:
     output: true
