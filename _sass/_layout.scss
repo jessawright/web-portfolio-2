@@ -1,5 +1,7 @@
 $text-color: #000000;
 $focus-highlight: #DDDDDD;
+$background-color: #F9F9F9;
+$accent-color: #F98203;
 
 * {
   box-sizing: border-box;
@@ -7,8 +9,8 @@ $focus-highlight: #DDDDDD;
 
 html {
     line-height: 1;
-    font-size: 100%;
-    font-family: sans-serif;
+    font-size: 20px;
+    font-family: 'museo_sans500';
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,25 +18,28 @@ html {
 }
 body {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     border: 0;
     vertical-align: baseline;
+    background-color: #F98203
 }
 h1 {
     font-size: 3em;
     line-height: 1.05;
     margin: 0;
-    padding: .5em 0;
+    padding: 0;
     border: 0;
     vertical-align: bottom;
+    background-color: $background-color;
 }
 h2 {
     font-size: 2.25em;
     line-height: 1.25;
     margin: 0;
-    padding: .5em 0;
+    padding: 0;
     border: 0;
     vertical-align: baseline;
+    background-color: $background-color;
 }
 h3 {
     font-size: 1.75em;
@@ -43,6 +48,7 @@ h3 {
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    background-color: $background-color;
 }
 h4 {
     font-size: 1.125em;
@@ -51,6 +57,7 @@ h4 {
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    background-color: $background-color;
 }
 h5, h6, blockquote, span, pre, a, abbr, address, cite, code, del, dfn, em, header, footer, ins, kbd, q, s, samp, small, strong, var, b, u, i, dl, dt, dd, ol, ul, label, legend, caption, details, figcaption, mark, main, p, time, li {
     margin: 0;
@@ -58,22 +65,32 @@ h5, h6, blockquote, span, pre, a, abbr, address, cite, code, del, dfn, em, heade
     border: 0;
     vertical-align: baseline;
     font-size: 1em;
+    background-color: $background-color;
 }
+
+p {
+  margin-bottom: .5rem;
+}
+
 div, object, iframe, img, sub, sup, fieldset, form, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure, hgroup, menu, nav, output, ruby, section, summary, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    background-color: $background-color;
 }
 
 article, aside, details, figcaption, figure, footer, header, menu, nav, section {
     display: block;
+    background-color: $background-color;
 }
 menu, ol, ul {
     list-style: none;
+    background-color: $background-color;
 }
 blockquote, q {
     quotes: none;
+    background-color: $background-color;
 }
 blockquote:before, blockquote:after, q:before, q:after {
     content: '';
@@ -82,14 +99,12 @@ blockquote:before, blockquote:after, q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+    background-color: $background-color;
 }
-:focus {
-    /* remember to define focus styles! */
-    outline: none;
-    /* this is to help you remember to do that! */
-    background-color: orange;
+:focus, :active, :hover, :focus:hover {
+  outline: none;
 }
-a:active, a:hover {
+a:active, a:hover, a:focus, a:hover:focus {
     outline-width: 0;
 }
 
@@ -124,47 +139,130 @@ a img, :link img, :visited img {
     border: none
 }
 
-/* Nav */
-.nav {
-  display: inline-flex;
-  justify-content: flex-end;
-
-  width: 100%;
-  align-items: flex-start;
+main {
+  border: 3px solid $text-color;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
-.nav-list, .nav-list__item, .nav-title {
-  display: inline-block;
+
+/* Header */
+.header {
+  display: inline-flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  background-color: $accent-color;
 }
 
-.nav-list {
-  border: 1px solid black;
+.nav-page-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $accent-color;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border: 3px solid $text-color;
+  margin-bottom: 1rem;
+}
+.nav__list-item {
+  font-size: 1.5em;
+  padding: .25rem .5rem;
+
 }
 
-.nav-list__item:focus, .nav-list__item:hover, .nav-list__item:active {
+.nav__list-item:focus, .nav__list-item:hover, .nav__list-item:active, .nav__list-item:hover:focus {
   background-color: $focus-highlight;
 }
-.nav-list__item {
+
+.page-title {
+  border: 3px solid $text-color;
+  flex: 0;
+  width: fit-content;
   padding: .25rem .5rem;
-  font-variant: small-caps;
-  :first-child {
-    padding: .25rem .5rem .25rem 1rem;
-  }
-  :last-child {
-    padding: .25rem 1rem .25rem .5rem;
-  }
 
 }
 
-.nav-title {
-  border: 1px solid black;
-  margin: 0 0 0 1rem;
-  :focus, :active, :hover {
-    background-color: $focus-highlight;
+.site-title {
+  border: 3px solid $text-color;
+  margin-left: 1rem;
+  padding: .75rem;
+  font-family: 'museo_slab500';
+  text-align: center;
+  display: inline-block;
+
+}
+
+.site-title:focus, .site-title:active, .site-title:hover, .site-title:hover:focus {
+  background-color: $focus-highlight;
+
+}
+/* Index */
+
+.index-main {
+  background-color: $accent-color;
+  border: none;
+}
+
+.index-title {
+  font-family: 'museo_slab500';
+  text-align: center;
+  margin-top: 10vh;
+  background-color: $accent-color;
 
   }
+
+.index-title__title {
+  font-size: 4em;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  border: 3px solid $text-color;
+  width: min-content;
 }
-.nav-title__text {
-  padding: .25rem;
-  font-variant: small-caps;
+
+.index-title__subtitle {
+  margin: 0 auto 1.25rem auto;
+  width: fit-content;
+  border: 3px solid $text-color;
+  padding: .75rem;
+}
+
+.index-menu {
+  text-align: center;
+  background-color: $accent-color;
+  }
+
+.index-menu__item {
+  display: inline-block;
+  border: 3px solid $text-color;
+  padding: .5rem;
+  margin: .5rem;
+  font-size: 1.5em;
+}
+
+.index-menu__item:focus, .index-menu__item:active, .index-menu__item:hover, .index-menu__item:hover:focus {
+  background-color: $focus-highlight;
+}
+
+/* Footer - keep it footed, etc. */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+footer {
+  text-align: center;
+  border: 3px solid $text-color;
+  width: fit-content;
+  padding: .25rem .5rem .25rem .5rem;
+  margin: 0 auto;
+  font-size: .75em;
 }

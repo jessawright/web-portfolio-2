@@ -1,6 +1,14 @@
 ---
-layout: default
+layout: blank
 ---
-<h2>Main Page</h2>
-
-<p>This is the main front page. It probably has a nice introduction and some eye-catching images.</p> 
+<main class="index-main">
+  <div class="index-title">
+    <h1 class="index-title__title">JESSA WRIGHT</h1>
+    <h2 class="index-title__subtitle">web developer and designer</h2>
+  </div>
+  <ul class="index-menu">
+    <li class="index-menu__item"><a href="{{ "/about" | prepend: site.baseurl }}">About</a></li>
+		<li class="index-menu__item"><a href="{{ "/work" | prepend: site.baseurl }}">Work</a></li>
+		<li class="index-menu__item"><a href="{{ "/contact" | prepend: site.baseurl }}">Contact</a></li>
+  </ul>
+</main>
