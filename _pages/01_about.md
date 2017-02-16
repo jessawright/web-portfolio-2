@@ -4,26 +4,24 @@ title: About
 permalink: /about/
 ---
 
-I am a self-taught web developer, currently focusing on front-end and UI development.
+I am a self-taught web developer and designer, currently focusing on front-end and UI development.
 
-My education in studio art and handcraft gives me an eye for design. I try to avoid making arbitrary design decisions, looking to the content and intended audience for design cues.
+I have an education in studio art and handcraft, giving me an eye for design. I have experience in library work, giving me skill in organizing information conceptually and visually.
 
-From my library work, I have professional experience organizing information both visually and in databases (library catalogs), catering to the needs of my audience. Likewise, I organize website content according to the intended audience as well as organizing my own workflow.
-
-My thinking style tends toward the strictly logical, which makes learning programming smooth and fun. Since I am very new to the field, it is my raw programming skill that will grow the fastest as I learn the capabilities and syntax of a given language.
-
-How do you feel about CSS? Many developers seem to hate it, but I enjoy it as a logical puzzle, just as I do the programming. 
+Though I am new to programming, I have a natural knack for the logical. I find programming to be delightful, even when it is also frustrating. As my newest skill, this is where I will grow the fastest in upcoming months and years and I am excited for the challenge. I am having a blast learning this!
 
 My toolset includes:
 
-* CSS3
 * HTML5
+* CSS3
 * JavaScript
+* Bootstrap
 * jQuery
 * React
-* Bootstrap
 * APIs
 * SVG
+* Webpack
+* Git/GitHub
 * Adobe Photoshop
 * Adobe Illustrator
-* Git/GitHub
+* Inkscape
