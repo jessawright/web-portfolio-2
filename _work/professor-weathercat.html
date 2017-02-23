@@ -3,7 +3,16 @@ layout: default
 title: Professor Weathercat
 url: http://jessawright.github.io/weather-cat/
 github: https://github.com/jessawright/weather-cat
+browser: /static_files/images/weather-cat-browser-768x1024.png
+class: work
 ---
-<p>This is a second single page of my collection.</p>
 
-<img src="http://res.cloudinary.com/jessawright/image/upload/v1470104222/portfolio/pusheen_screenshot.jpg" />
+<img class="work__browser" src="{{ page.browser }}" />
+<img class="work__iphone6" src="/static_files/images/weather-cat-iphone6.png" />
+<h3 class="work__heading">Project Goal</h3>
+  <p class="work__text" >My original goal for this project was to make a responsive single page app that used an API and browser geolocation data to display weather information. I wanted to make something fun and different, so I added in Pusheen and dressing her for the weather.</p>
+<h3 class="work__heading" >Development Decisions</h3>
+  <p class="work__text">I began by choosing OpenWeatherMap for my weather information primarily because it includes a good set of easy-to-visualize coded weather categories in the API. I was able to use those weather categories as a large part of determining the imagery to display with the weather information. </p>
+  <p class="work__text">I created dozens of images to layer above and below Pusheen, chosen based on those weather categories, time of day, and temperature. I assigned each weather category a series of images to display, which is then modified by the time (night or day) and temperature. For example, in the screenshots, "broken clouds" includes a few light clouds, a few dark clouds, a desaturated sky color, and grassy ground. Since it is daytime, the desaturated sky color is light; since it is relatively warm, Pusheen doesn't need her coat, hat, or scarf.</p>
+  <p class="work__text">When I began this project, I planned to rely primarily on browser geolocation data to collect the location for the API call, inlcuding a search box relying on the location search function within OpenWeatherMap's API. However, when I was partway through, Google deprecated browser geolocation on websites with insecure origins in Chrome. Since I was using the HTTP version of OpenWeatherMap's API, if I made my app secure, I would lose access to the API. Now that browser geolocation wouldn't work for so many of my users, I decided to make location search more robust by using the Google Maps Places Autocomplete API. When a user chooses a location in the search box, the coordinates of that location (from Google Maps Places Autocomplete) is sent int the API call to OpenWeatherMap.</p>
+<h3 class="work__heading">Design Decisions</h3>

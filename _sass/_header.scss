@@ -1,0 +1,53 @@
+.header {
+  display: inline-flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  background-color: $accent-color;
+}
+
+.nav-page-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $accent-color;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border: 3px solid $text-color;
+  margin-bottom: 1rem;
+}
+.nav__list-item {
+  font-size: 1.5em;
+  padding: .25rem .5rem;
+
+}
+
+.nav__list-item:focus, .nav__list-item:hover, .nav__list-item:active, .nav__list-item:hover:focus {
+  background-color: $focus-highlight;
+}
+
+.page-title {
+  border: 3px solid $text-color;
+  flex: 0;
+  width: fit-content;
+  padding: .25rem .5rem;
+
+}
+
+.site-title {
+  border: 3px solid $text-color;
+  margin-left: 1rem;
+  padding: .75rem;
+  font-family: 'museo_slab500';
+  text-align: center;
+  display: inline-block;
+
+}
+
+.site-title:focus, .site-title:active, .site-title:hover, .site-title:hover:focus {
+  background-color: $focus-highlight;
+
+}
