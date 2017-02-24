@@ -1,27 +1,28 @@
 ---
 layout: default
 title: Professor Weathercat
-url: http://jessawright.github.io/weather-cat/
+live: http://jessawright.github.io/weather-cat/
 github: https://github.com/jessawright/weather-cat
 feature-image: /static_files/images/weather-cat-browser-768x1024.png
 
 ---
 
-
-<h3 class="work__heading">Goal</h3>
-  <p class="work__text">Make a responsive single page app that displays current weather information for a given location and generates a Pusheen illustration for the weather.</p>
+<h3 class="work__heading">Project</h3>
+  <p class="work__text">Make a responsive single page app that displays current weather information for a given location and generates a Pusheen illustration based on the weather.</p>
   <img class="work__iphone-image" src="/static_files/images/weather-cat-iphone6.png" />
 <h3 class="work__heading">Development</h3>
 <ul class="work__list">
-  <li class="work__list-item">I used OpenWeatherMap's API for weather information. Their API includes easy-to-visualize categories of weather that I used to determine the elements of the Pusheen illustration.</li>
-  <li class="work__list-item">I used the Google Maps Places Autocomplete API to allow users to search for a location.</li>
+  <li class="work__list-item">I started with OpenWeatherMap's API for weather information, largely for their easy-to-visualize weather categories.</li>
+  <li class="work__list-item">I used the Google Maps Places Autocomplete API to allow users to search for a location. This gives the app a more robust search function than that built into OpenWeatherMap. Once the app has the location from the search (or browser geolocation), it adds the coordinates to the API call to OpenWeatherMap.</li>
+  <li class="work__list-item"> I assigned a series of illustration elements to each weather category from OpenWeatherMap and stores these lists in a JSON. For example, "broken clouds" is assigned white clouds, gray clouds, grass, and desaturated sky color. Once the app gets the weather category, it retrieves the image list for that category, then modifies the list based on temperature and time of day (ex. Cold enough for a hat? Night or day?). The app collects and displays illustrations based on this final list.</li>
 </ul>
 
 <h3 class="work__heading">Design</h3>
   <ul class="work__list">
-    <li class="work__list-item">Many illustration elements are only very lightly modified from originals at <a href="http://www.pusheen.com/">Pusheen.com</a>. Others were more heavily modified from originals (ex. combining multiple original illustrations into a single illustration element). I made the remaining illustration elements from scratch.</li>
-    <li class="work__list-item">I designed the UI elements displaying the weather information to be sympathetic to Pusheen's illustration style and unobtrusive to the generated illustration. The font, Varela Round, imitates the lettering in original Pusheen illustrations. The transparency of the display boxes balances  readability of the text with visibility of the illustration. Corners are rounded in keeping with the soft edges of Pusheen's world.</li>
+    <li class="work__list-item">I used Pusheen illustrations, but I still did a fair amount of illustration work. Many elements are only very lightly modified from originals at <a href="http://www.pusheen.com/">Pusheen.com</a>. I modified other illustrations more heavily and made some from scratch in Photoshop.</li>
+    <li class="work__list-item">I designed the UI elements displaying the weather information to be sympathetic to Pusheen's style and unobtrusive to the generated illustration. The font, Varela Round, imitates the lettering in original Pusheen illustrations; the transparency of the display boxes balances readability of the text with visibility of the illustration.</li>
   </ul>
+
 <h3 class="work__heading">Tools</h3>
   <ul class="work__list">
     <li class="work__list-item">HTML5/CSS3</li>

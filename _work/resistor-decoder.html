@@ -1,30 +1,30 @@
 ---
 layout: default
 title: Resistor Decoder
-url: http://jessawright.github.io/resistor-decoder/
+live: http://jessawright.github.io/resistor-decoder/
 github: https://github.com/jessawright/resistor-decoder
 feature-image: /static_files/images/resistor-decoder-browser-1024x768.png
 
 ---
 
-
-  <h3 class="work__heading">Goal</h3>
+  <h3 class="work__heading">Project</h3>
     <p class="work__text">Make a single page app to decode the colored bands on through-hole resistors and display their value.</p>
 
   <h3 class="work__heading">Development</h3>
     <ul class="work__list">
-      <li class="work__list-item">I used this project primarily as a way to learn React.</li>
-      <li class="work__list-item">I learned a lot about SVG: making vector drawings in Inkscape/Illustrator, optimization methods and considerations, implementations methods, and syntax.</li>
-      <li class="work__list-item" >Along the way, I also learned Sass and Webpack.</li>
+      <li class="work__list-item">I used this project primarily as a way to learn React, SVG, Sass, and Webpack while making something interesting.</li>
+      <li class="work__list-item">After sketching a general UI plan, I drew a flowchart of React components and the information flow between them.</li>
+      <li class="work__list-item">After making a resistor SVG, I broke up the SVG code to assign to several different React components. Once I had some basic functions and information flow in place, I created a JSON to store all the information necessary to actually decode resistors, then added those decoding functions.</li>
     </ul>
 
   <h3 class="work__heading">Design</h3>
     <ul class="work__list">
-      <li class="work__list-item">I designed the entire UI to look like components on a printed circuit board: a resistor, lit and unlit LEDs for radio buttons, and LCDs to display the resistor value.</li>
+      <li class="work__list-item">I designed the entire UI to look like components on a printed circuit board: a resistor, LEDs for radio buttons, and LCDs to display the resistor value.</li>
       <li cclass="work__list-item">I chose all the colors by taking color samples from photos of printed circuit boards, resistors, LCDs, and LEDs.</li>
       <li class="work__list-item">The resistor shape began as a vector tracing of a photo of a resistor, then I cleaned it up and made it symmetrical.</li>
       <li class="work__list-item">I chose fonts based on what is typically seen on circuit boards and LCDs.</li>
     </ul>
+
   <h3 class="work__heading">Tools</h3>
     <ul class="work__list">
       <li class="work__list-item">HTML5/CSS3</li>

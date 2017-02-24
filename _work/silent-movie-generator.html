@@ -1,10 +1,32 @@
 ---
 layout: default
 title: Silent Movie Generator
-url: http://jessawright.github.io/silent-movie-generator/
+live: http://jessawright.github.io/silent-movie-generator/
 github: https://github.com/jessawright/silent-movie-generator
-
+feature-image: /static_files/images/silent-movie-browser-768x1024.png
 ---
-<p>This is a single page of my collection.</p>
 
-<img src="http://res.cloudinary.com/jessawright/image/upload/v1470104019/portfolio/silent_screenshot.jpg" />
+<h3 class="work__heading">Project</h3>
+  <p class="work__text">Make a responsive single page app that randomly generates new silent movies.</p>
+  <img class="work__iphone-image" src="/static_files/images/silent-movie-iphone6.png" />
+<h3 class="work__heading">Development</h3>
+<ul class="work__list">
+  <li class="work__list-item">To begin, I knew I wanted to make some sort of cohesive storyline with a variety of possible GIFs/intertitles for each frame. I collected interesting and useful intertitles from silent movies, categorized them, and created a storyline based on what I had. From there, I collected silent movie GIFs featuring Harold Lloyd and Mildred Davis, having only two actors to give the movies some continuity.</li>
+  <li class="work__list-item">I created a JSON to store my content: several possible GIFs/intertitles for each frame with some metadata. Each silent move begins as a randomly generated series of numbers, one number per frame. Each of those numbers represents which of the possible GIFs/intertitles for that frame will be displayed. By using a series of numbers, users can move forward and backward in the same movie before generating a new one.</li>
+  <li class="work__list-item">Each frame has a bit of metadata displayed (source movie title, year, and a link to the GIF source). Using the Twitter API, each frame is also tweetable, with an automatically generated tweet including this metadata.</li>
+</ul>
+
+<h3 class="work__heading">Design</h3>
+  <ul class="work__list">
+    <li class="work__list-item">I designed a very simple UI with fonts and colors chosen to evoke the Golden Age of silent film.</li>
+  </ul>
+
+<h3 class="work__heading">Tools</h3>
+  <ul class="work__list">
+    <li class="work__list-item">HTML5/CSS3</li>
+    <li class="work__list-item">Bootstrap</li>
+    <li class="work__list-item">Javascript</li>
+    <li class="work__list-item">jQuery</li>
+    <li class="work__list-item">API</li>
+    <li class="work__list-item">Photoshop</li>
+  </ul>
