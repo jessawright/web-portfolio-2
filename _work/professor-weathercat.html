@@ -3,16 +3,31 @@ layout: default
 title: Professor Weathercat
 url: http://jessawright.github.io/weather-cat/
 github: https://github.com/jessawright/weather-cat
-browser: /static_files/images/weather-cat-browser-768x1024.png
-class: work
+feature-image: /static_files/images/weather-cat-browser-768x1024.png
+
 ---
 
-<img class="work__browser" src="{{ page.browser }}" />
-<img class="work__iphone6" src="/static_files/images/weather-cat-iphone6.png" />
-<h3 class="work__heading">Project Goal</h3>
-  <p class="work__text" >My original goal for this project was to make a responsive single page app that used an API and browser geolocation data to display weather information. I wanted to make something fun and different, so I added in Pusheen and dressing her for the weather.</p>
-<h3 class="work__heading" >Development Decisions</h3>
-  <p class="work__text">I began by choosing OpenWeatherMap for my weather information primarily because it includes a good set of easy-to-visualize coded weather categories in the API. I was able to use those weather categories as a large part of determining the imagery to display with the weather information. </p>
-  <p class="work__text">I created dozens of images to layer above and below Pusheen, chosen based on those weather categories, time of day, and temperature. I assigned each weather category a series of images to display, which is then modified by the time (night or day) and temperature. For example, in the screenshots, "broken clouds" includes a few light clouds, a few dark clouds, a desaturated sky color, and grassy ground. Since it is daytime, the desaturated sky color is light; since it is relatively warm, Pusheen doesn't need her coat, hat, or scarf.</p>
-  <p class="work__text">When I began this project, I planned to rely primarily on browser geolocation data to collect the location for the API call, inlcuding a search box relying on the location search function within OpenWeatherMap's API. However, when I was partway through, Google deprecated browser geolocation on websites with insecure origins in Chrome. Since I was using the HTTP version of OpenWeatherMap's API, if I made my app secure, I would lose access to the API. Now that browser geolocation wouldn't work for so many of my users, I decided to make location search more robust by using the Google Maps Places Autocomplete API. When a user chooses a location in the search box, the coordinates of that location (from Google Maps Places Autocomplete) is sent int the API call to OpenWeatherMap.</p>
-<h3 class="work__heading">Design Decisions</h3>
+
+<h3 class="work__heading">Goal</h3>
+  <p class="work__text">Make a responsive single page app that displays current weather information for a given location and generates a Pusheen illustration for the weather.</p>
+  <img class="work__iphone-image" src="/static_files/images/weather-cat-iphone6.png" />
+<h3 class="work__heading">Development</h3>
+<ul class="work__list">
+  <li class="work__list-item">I used OpenWeatherMap's API for weather information. Their API includes easy-to-visualize categories of weather that I used to determine the elements of the Pusheen illustration.</li>
+  <li class="work__list-item">I used the Google Maps Places Autocomplete API to allow users to search for a location.</li>
+</ul>
+
+<h3 class="work__heading">Design</h3>
+  <ul class="work__list">
+    <li class="work__list-item">Many illustration elements are only very lightly modified from originals at <a href="http://www.pusheen.com/">Pusheen.com</a>. Others were more heavily modified from originals (ex. combining multiple original illustrations into a single illustration element). I made the remaining illustration elements from scratch.</li>
+    <li class="work__list-item">I designed the UI elements displaying the weather information to be sympathetic to Pusheen's illustration style and unobtrusive to the generated illustration. The font, Varela Round, imitates the lettering in original Pusheen illustrations. The transparency of the display boxes balances  readability of the text with visibility of the illustration. Corners are rounded in keeping with the soft edges of Pusheen's world.</li>
+  </ul>
+<h3 class="work__heading">Tools</h3>
+  <ul class="work__list">
+    <li class="work__list-item">HTML5/CSS3</li>
+    <li class="work__list-item">Bootstrap</li>
+    <li class="work__list-item">Javascript</li>
+    <li class="work__list-item">jQuery</li>
+    <li class="work__list-item">APIs</li>
+    <li class="work__list-item">Photoshop</li>
+  </ul>
