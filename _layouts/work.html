@@ -4,9 +4,12 @@
 <body>
     {% include header.html %}
     <main>
-
+      {% if page.feature-image %}
+        <img class="work__feature-image" src="{{page.feature-image}}" />
+      {% endif %}
+      <div class="work__content">
         {{ content }}
-
+      </div>
     </main>
     {% include footer.html %}
 </body>

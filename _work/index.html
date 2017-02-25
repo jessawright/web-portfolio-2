@@ -9,12 +9,14 @@ title: Work
 
     <li class="work-index__entry">
       <a href="{{ page.url | prepend: site.baseurl }}"><img class="work-index__image" src="{{ page.feature-image}}" /></a>
-      <h3>{{ page.title }}</h3>
-      <ul class="work-index__link-list">
-        <li class="work-index__link"><a href="{{ page.url | prepend: site.baseurl }}">More about this project</a></li>
-        <li class="work-index__link"><a href=" {{page.live}}">View live</a></li>
-        <li class="work-index__link"><a href="{{page.github}}">View on Github</a></li>
-      </ul>
+      <div class="work-index__content">
+        <h3 class="work-index__header">{{ page.title }}</h3>
+        <ul class="work-index__link-list">
+          <li class="work-index__link-list-item"><a class="work-index__link" href="{{ page.url | prepend: site.baseurl }}">About this project</a></li>
+          <li class="work-index__link-list-item"><a  class="work-index__link" href=" {{page.live}}">View live</a></li>
+          <li class="work-index__link-list-item"><a class="work-index__link" href="{{page.github}}">View on Github</a></li>
+        </ul>
+      </div>
     </li>
 
     {% endunless %} {% endif %} {% endfor %}
