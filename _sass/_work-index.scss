@@ -2,22 +2,24 @@
   list-style: none;
 }
 .work-index__entry {
-  margin: 0 0 1rem 0;
+  margin: 0;
   padding: 1rem;
-  border: 3px dotted $text-color;
 }
 
+
+
 .work-index__image {
-  max-width: 60%;
+  max-width: 59%;
   max-height: 75vh;
   display: inline-block;
-  margin: 0 1rem 0 0;
-  border: 3px solid $text-color;
+  margin: 0 1% 0 0;
+  border: $border;
   border-radius: 1%;
-  background-color: $text-color;
+
 }
 
 .work-index__content {
+  max-width: 39%;
   display: inline-block;
   vertical-align: top;
 }
@@ -28,17 +30,24 @@
 
 .work-index__link-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .work-index__link-list-item {
   display: block;
   margin: 0 0 .5rem 0;
   font-size: 1.25rem;
-  padding: .5rem;
+  padding: .25rem;
+  border: $border;
+}
+
+.work-index__link-list-item:hover, .work-index__link-list-item:focus, .work-index__link-list-item:active, .work-index__link-list-item:focus:hover {
+  background-color: $focus-highlight;
 }
 
 .work-index__link{
-  border: 3px solid $text-color;
-  padding: .5rem;
-  margin: 0 0 .5rem 0;
+
 }

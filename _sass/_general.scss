@@ -3,6 +3,7 @@ $focus-highlight: #DDDDDD;
 $background-color: #F9F9F9;
 $accent-color: #F98203;
 $accent-shade: #AAAAAA;
+$border: .2rem solid $text-color;
 
 * {
   box-sizing: border-box;
@@ -139,10 +140,27 @@ a img, :link img, :visited img {
     border: none;
 }
 */
-main {
-  border: 3px solid $text-color;
+
+.container--site {
+  max-width: 100rem;
+  background-color: $accent-color;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.container--page {
+  border: $border;
   margin-bottom: 1rem;
   padding: 1rem;
+  width: 100%;
+  display: inline-block;
+
+}
+
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: left;
 }
 
 img {

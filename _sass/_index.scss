@@ -15,14 +15,14 @@
   font-size: 4em;
   margin: 0 auto 1rem auto;
   padding: 1rem;
-  border: 3px solid $text-color;
+  border: $border;
   width: min-content;
 }
 
 .index-title__subtitle {
   margin: 0 auto 1.25rem auto;
   width: fit-content;
-  border: 3px solid $text-color;
+  border: $border;
   padding: .75rem;
 }
 
@@ -33,7 +33,7 @@
 
 .index-menu__item {
   display: inline-block;
-  border: 3px solid $text-color;
+  border: $border;
   padding: .5rem;
   margin: .5rem;
   font-size: 1.5em;
