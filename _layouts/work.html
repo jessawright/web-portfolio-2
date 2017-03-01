@@ -10,6 +10,10 @@
           <img class="work__feature-image" src="{{page.feature-image}}" />
         {% endif %}
         <div class="work__content">
+          <ul class="work__link-list">
+            <li class="work__link"><a   href=" {{page.live}}"><i class="fa fa-link" aria-hidden="true"></i>Live</a></li>
+            <li class="work__link"><a  href="{{page.github}}"><i class="fa fa-github" aria-hidden="true"></i>Github</a></li>
+          </ul>
           {{ content }}
         </div>
       </main>

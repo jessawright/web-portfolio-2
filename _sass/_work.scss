@@ -23,6 +23,26 @@
   margin: 1.5rem 0 0 0;
 }
 
+.work__link-list {
+  list-style: none;
+  text-align: center;
+}
+
+.work__link {
+  display: inline-block;
+  padding: .25em .5em;
+  border: $border;
+  margin: 0 .25rem;
+  font-size: 1.125rem;
+}
+
+.work__link:hover,
+.work__link:focus,
+.work__link:active,
+.work__link:hover:focus {
+  background-color: $focus-highlight;
+}
+
 .work__text {
   margin: .5rem 0 0 0;
 }
@@ -38,4 +58,9 @@
   text-indent: 0;
   padding-left: 0;
 
+}
+@media screen and (max-width: 48rem) {
+  .work__link {
+    font-size: 1rem;
+  }
 }

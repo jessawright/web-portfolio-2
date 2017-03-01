@@ -4,11 +4,14 @@
 
 .page__header {
   max-width: 30em;
+  border-left: $border;
+  padding: .25em 0 .25em 1rem;
+  margin: 0 0 2rem 0;
 
 }
 
 .page__section {
-  margin: 1.5rem 0 0 0;
+  margin: 2rem 0 0 0;
 }
 
 .page__paragraph {
@@ -18,11 +21,12 @@
   border: $border;
   padding: .25rem .5rem;
   display: inline-block;
+  margin: .75rem 0 0 0;
 }
 
 
 .page__section--list {
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1.2rem;
 }
 .page__list--about {
   padding: 0 0 0 1em;
