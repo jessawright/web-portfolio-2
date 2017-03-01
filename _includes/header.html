@@ -1,11 +1,15 @@
 <header class="header">
-	<div class="nav-page-title">
-		<ul class="nav">
-			<li class="nav__list-item"><a href="{{ "/about" | prepend: site.baseurl }}">About</a></li>
-			<li class="nav__list-item"><a href="{{ "/work" | prepend: site.baseurl }}">Work</a></li>
-			<li class="nav__list-item"><a href="{{ "/contact" | prepend: site.baseurl }}">Contact</a></li>
+	<nav>
+		<div class="site-title-container">
+			<h1 class="site-title"><a href="{{ site.baseurl }}">JESSA<br />WRIGHT</a></h1>
+		</div>
+		<ul class="nav__list">
+			<li class="nav__item"><a href="{{ "/about" | prepend: site.baseurl }}">About</a></li>
+			<li class="nav__item"><a href="{{ "/work" | prepend: site.baseurl }}">Work</a></li>
+			<li class="nav__item"><a href="{{ "/contact" | prepend: site.baseurl }}">Contact</a></li>
 		</ul>
-		<h2 class="page-title">{{ page.title }}</h2>
-	</div>
-	<h1 class="site-title"><a href="{{ site.baseurl }}">JESSA<br />WRIGHT</a></h1>
+	</nav>
+	<h2 class="page-title">{{ page.title }}</h2>
+
+
 </header>

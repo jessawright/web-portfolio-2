@@ -4,9 +4,9 @@ title: Contact
 permalink: /contact/
 class: page
 ---
-<ul class="page__list">
-  <li ><a href="{{ site.email }}">Email</a></li>
-  <li ><a href="https://github.com/jessawright">GitHub</a></li>
-  <li ><a href="https://www.linkedin.com/in/jessica-wright-64998031">LinkedIn</a></li>
-
+<ul class="page__list--contact page__list">
+  <li class="page__list-item--contact"><a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</a></li>
+  <li class="page__list-item--contact"><a href="https://github.com/jessawright"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
+  <li class="page__list-item--contact"><a href="https://www.linkedin.com/in/jessica-wright-64998031"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
+  <li class="page__list-item--contact"><a href={{ "/static_files/docs/jwright-resume.pdf" | prepend: site.baseurl }}><i class="fa fa-file-pdf-o" aria-hidden="true"></i></i>Resume</a></li>
 </ul>
