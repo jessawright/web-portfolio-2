@@ -3,10 +3,10 @@ $focus-highlight: #DDDDDD;
 $background-color: #F9F9F9;
 $accent-color: #F98203;
 $accent-shade: #AAAAAA;
-$border: .2rem solid $text-color;
+$border: 0.2rem solid $text-color;
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -18,6 +18,7 @@ html {
     border: 0;
     vertical-align: baseline;
 }
+
 body {
     margin: 0;
     padding: 1rem;
@@ -25,6 +26,7 @@ body {
     vertical-align: baseline;
     background-color: $accent-color;
 }
+
 h1 {
     font-size: 3rem;
     line-height: 1.05;
@@ -34,6 +36,7 @@ h1 {
     vertical-align: bottom;
     background-color: $background-color;
 }
+
 h2 {
     font-size: 2.25rem;
     line-height: 1.25;
@@ -43,6 +46,7 @@ h2 {
     vertical-align: baseline;
     background-color: $background-color;
 }
+
 h3 {
     font-size: 1.75rem;
     line-height: 1.25;
@@ -52,6 +56,7 @@ h3 {
     vertical-align: baseline;
     background-color: $background-color;
 }
+
 h4 {
     font-size: 1.25rem;
     line-height: 1.22222222;
@@ -61,7 +66,48 @@ h4 {
     vertical-align: baseline;
     background-color: $background-color;
 }
-h5, h6, blockquote, span, pre, a, abbr, address, cite, code, del, dfn, em, header, footer, ins, kbd, q, s, samp, small, strong, var, b, u, i, dl, dt, dd, ol, ul, label, legend, caption, details, figcaption, mark, main, p, time, li {
+
+a,
+abbr,
+address,
+b,
+blockquote,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dl,
+dt,
+em,
+figcaption,
+footer,
+h5,
+h6,
+header,
+i,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strong,
+time,
+u,
+ul,
+var {
     margin: 0;
     padding: 0;
     border: 0;
@@ -71,10 +117,38 @@ h5, h6, blockquote, span, pre, a, abbr, address, cite, code, del, dfn, em, heade
 }
 
 p {
-  margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
-div, object, iframe, img, sub, sup, fieldset, form, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure, hgroup, menu, nav, output, ruby, section, summary, audio, video {
+article,
+aside,
+audio,
+canvas,
+div,
+embed,
+fieldset,
+figure,
+form,
+hgroup,
+iframe,
+img,
+menu,
+nav,
+object,
+output,
+ruby,
+section,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -82,30 +156,57 @@ div, object, iframe, img, sub, sup, fieldset, form, table, tbody, tfoot, thead, 
     background-color: $background-color;
 }
 
-article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
     display: block;
     background-color: $background-color;
 }
-menu, ol, ul {
+
+menu,
+ol,
+ul {
     background-color: $background-color;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
     background-color: $background-color;
 }
-blockquote:before, blockquote:after, q:before, q:after {
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
     background-color: $background-color;
 }
-:focus, :active, :hover, :focus:hover {
-  outline: none;
+
+:active,
+:focus,
+:focus:hover,
+:hover {
+    outline: none;
 }
-a:active, a:hover, a:focus, a:hover:focus {
+
+a:active,
+a:focus,
+a:hover,
+a:hover:focus {
     outline-width: 0;
 }
 
@@ -115,7 +216,9 @@ a {
     text-decoration: none;
     color: $text-color;
 }
-sub, sup {
+
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -124,9 +227,11 @@ sub, sup {
     padding: 0;
     border: 0;
 }
+
 sub {
     bottom: -0.25em;
 }
+
 sup {
     top: -0.5em;
 }
@@ -135,69 +240,64 @@ table {
     border-collapse: separate;
     border-spacing: 0;
 }
-/*
-a img, :link img, :visited img {
-    border: none;
-}
-*/
 
 .container--site {
-width: 100%;
-  background-color: $accent-color;
-  margin: 0 auto;
-  text-align: center;
-
-}
-.container--page {
-  border: $border;
-  margin-bottom: 1rem;
-  padding: 1rem;
     width: 100%;
+    max-width: 80rem;
+    background-color: $accent-color;
+    margin: 0 auto;
+    text-align: center;
+}
 
-
-
+.container--page {
+    border: $border;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
 }
 
 main {
-
-
-  text-align: left;
+    text-align: left;
 }
 
 img {
-  background-color: transparent;
+    background-color: transparent;
 }
 @media screen and (max-width: 48rem) {
+    h1 {
+        font-size: 2.25rem;
+    }
 
-  h1 {
-      font-size: 2.25rem;
-    }
     h2 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
+
     h3 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
+
     h4 {
-      font-size: 1.125rem;
+        font-size: 1.125rem;
     }
 }
-
 @media screen and (max-width: 34rem) {
-  body {
-    font-size: 100%;
-  }
-  h1 {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 1.625rem;
-    }
-    h3 {
-      font-size: 1.375rem;
-    }
-    .container--page {
-      padding: .5rem;
+    body {
+        font-size: 100%;
     }
 
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.625rem;
+    }
+
+    h3 {
+        font-size: 1.375rem;
+    }
+
+    .container--page {
+        padding: 0.5rem;
+    }
 }
