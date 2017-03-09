@@ -10,11 +10,11 @@ title: Work
     {% if page.title %} {% unless page.title == "Work" %}
 
     <li class="work-index__entry">
-      <a href="{{ page.url | prepend: site.url }}"><img class="work-index__image" src="{{ page.feature-image}}" /></a>
+      <a href="{{site.baseurl}}/{{page.url}}"><img class="work-index__image" src="{{site.baseurl}}/{{page.feature-image}}" /></a>
       <div class="work-index__content">
-        <h3 class="work-index__header"><a href="{{ page.url | prepend: site.url }}">{{ page.title }}</a></h3>
+        <h3 class="work-index__header"><a href="{{site.baseurl}}/{{page.url}}">{{ page.title }}</a></h3>
         <ul class="work-index__link-list">
-          <li class="work-index__link-list-item"><a class="work-index__link" href="{{ page.url | prepend: site.url }}">Background</a></li>
+          <li class="work-index__link-list-item"><a class="work-index__link" href="{{site.baseurl}}/{{page.url}}">Background</a></li>
           <li class="work-index__link-list-item"><a  class="work-index__link" href=" {{page.live}}"><i class="fa fa-link" aria-hidden="true"></i>Live</a></li>
           <li class="work-index__link-list-item"><a class="work-index__link" href="{{page.github}}"><i class="fa fa-github" aria-hidden="true"></i>Github</a></li>
         </ul>
