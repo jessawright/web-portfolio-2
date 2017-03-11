@@ -31,3 +31,5 @@ kramdown:
 collections:
   work:
     output: true
+gems:
+  - octopress-autoprefixer

@@ -16,7 +16,7 @@
   margin: 0 auto 1rem auto;
   padding: 1rem;
   border: $border;
-  width: min-content;
+  width: fit-content;
 }
 
 .index-title__subtitle {
@@ -29,6 +29,7 @@
 .index-menu {
   text-align: center;
   background-color: $accent-color;
+  margin: 0 0 2rem 0;
   }
 
 .index-menu__item {
@@ -41,4 +42,10 @@
 
 .index-menu__item:focus, .index-menu__item:active, .index-menu__item:hover, .index-menu__item:hover:focus {
   background-color: $focus-highlight;
+}
+@media screen and (max-width: 34rem) {
+  .index-title__title {
+    font-size: 3em;
+  }
+
 }
